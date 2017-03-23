@@ -1,0 +1,9 @@
+c:\users\facundogauna\documents\visual studio 2017\Projects\AspCoreDemo\AspCoreDemo\bin\Debug\netcoreapp1.1\AspCoreDemo.deps.json
+c:\users\facundogauna\documents\visual studio 2017\Projects\AspCoreDemo\AspCoreDemo\bin\Debug\netcoreapp1.1\AspCoreDemo.runtimeconfig.json
+c:\users\facundogauna\documents\visual studio 2017\Projects\AspCoreDemo\AspCoreDemo\bin\Debug\netcoreapp1.1\AspCoreDemo.runtimeconfig.dev.json
+c:\users\facundogauna\documents\visual studio 2017\Projects\AspCoreDemo\AspCoreDemo\bin\Debug\netcoreapp1.1\AspCoreDemo.dll
+c:\users\facundogauna\documents\visual studio 2017\Projects\AspCoreDemo\AspCoreDemo\bin\Debug\netcoreapp1.1\AspCoreDemo.pdb
+c:\users\facundogauna\documents\visual studio 2017\Projects\AspCoreDemo\AspCoreDemo\obj\Debug\netcoreapp1.1\AspCoreDemo.csprojResolveAssemblyReference.cache
+c:\users\facundogauna\documents\visual studio 2017\Projects\AspCoreDemo\AspCoreDemo\obj\Debug\netcoreapp1.1\AspCoreDemo.AssemblyInfo.cs
+c:\users\facundogauna\documents\visual studio 2017\Projects\AspCoreDemo\AspCoreDemo\obj\Debug\netcoreapp1.1\AspCoreDemo.dll
+c:\users\facundogauna\documents\visual studio 2017\Projects\AspCoreDemo\AspCoreDemo\obj\Debug\netcoreapp1.1\AspCoreDemo.pdb
