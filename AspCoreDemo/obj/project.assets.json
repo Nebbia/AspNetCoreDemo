@@ -9701,10 +9701,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FacundoGauna\\documents\\visual studio 2017\\Projects\\AspCoreDemo\\AspCoreDemo\\AspCoreDemo.csproj",
+      "projectUniqueName": "C:\\Repos\\AspNetCoreMiddleware\\AspCoreDemo\\AspCoreDemo.csproj",
       "projectName": "AspCoreDemo",
-      "projectPath": "C:\\Users\\FacundoGauna\\documents\\visual studio 2017\\Projects\\AspCoreDemo\\AspCoreDemo\\AspCoreDemo.csproj",
-      "outputPath": "C:\\Users\\FacundoGauna\\documents\\visual studio 2017\\Projects\\AspCoreDemo\\AspCoreDemo\\obj\\",
+      "projectPath": "C:\\Repos\\AspNetCoreMiddleware\\AspCoreDemo\\AspCoreDemo.csproj",
+      "outputPath": "C:\\Repos\\AspNetCoreMiddleware\\AspCoreDemo\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

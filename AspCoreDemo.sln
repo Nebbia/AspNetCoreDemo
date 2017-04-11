@@ -1,9 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCoreDemo", "AspCoreDemo\AspCoreDemo.csproj", "{D70F65BE-50F3-4FD2-BCF5-7F0189279AFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspCoreDemo", "AspCoreDemo\AspCoreDemo.csproj", "{D70F65BE-50F3-4FD2-BCF5-7F0189279AFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCoreDemo.Middleware.OrderOfExecution", "AspCoreDemo.Middleware.OrderOfExecution\AspCoreDemo.Middleware.OrderOfExecution.csproj", "{6315F0B2-9F2A-46EC-BEE9-F4A22B0022B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCoreDemo.Middleware.ShortCircuit", "AspCoreDemo.Middleware.ShortCircuit\AspCoreDemo.Middleware.ShortCircuit.csproj", "{C8F62069-8AB0-47AB-9F83-EFE534109311}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCoreDemo.Middleware.Environments", "AspCoreDemo.Middleware.Environments\AspCoreDemo.Middleware.Environments.csproj", "{5EE8DDAD-780A-48A5-99A8-DCDDA82372A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCoreDemo.Middleware.Branching", "AspCoreDemo.Middleware.Branching\AspCoreDemo.Middleware.Branching.csproj", "{F5798221-C71E-4991-A60E-0A60C52FB1E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Order of Execution", "1. Order of Execution", "{C7536D87-66BB-4F02-958D-9DE31CFF1520}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Short Circuit", "2. Short Circuit", "{D5BEDD01-F66C-4202-830A-3A24F527B614}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Environments", "3. Environments", "{0AB4A289-5842-4D83-BB8C-719477E04672}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Branching via UseWhen and MapWhen", "4. Branching via UseWhen and MapWhen", "{4BB01036-AED0-4B8C-B66B-3B72E956E9F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCoreDemo.Middleware.ShortCircuit2", "AspCoreDemo.Middleware.ShortCircuit2\AspCoreDemo.Middleware.ShortCircuit2.csproj", "{617D8D59-653A-4374-A227-D2195B7F5A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCoreDemo.Middleware.Environments2", "AspCoreDemo.Middleware.Environments2\AspCoreDemo.Middleware.Environments2.csproj", "{FDA0C22B-C1F1-417E-A234-3605F0A15A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCoreDemo.Middleware.UseWhen", "AspCoreDemo.Middleware.UseWhen\AspCoreDemo.Middleware.UseWhen.csproj", "{A8C17B7E-B54E-4785-B3DB-C8B8BAE38703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +37,45 @@ Global
 		{D70F65BE-50F3-4FD2-BCF5-7F0189279AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D70F65BE-50F3-4FD2-BCF5-7F0189279AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D70F65BE-50F3-4FD2-BCF5-7F0189279AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6315F0B2-9F2A-46EC-BEE9-F4A22B0022B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6315F0B2-9F2A-46EC-BEE9-F4A22B0022B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6315F0B2-9F2A-46EC-BEE9-F4A22B0022B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6315F0B2-9F2A-46EC-BEE9-F4A22B0022B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F62069-8AB0-47AB-9F83-EFE534109311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F62069-8AB0-47AB-9F83-EFE534109311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F62069-8AB0-47AB-9F83-EFE534109311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F62069-8AB0-47AB-9F83-EFE534109311}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE8DDAD-780A-48A5-99A8-DCDDA82372A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE8DDAD-780A-48A5-99A8-DCDDA82372A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE8DDAD-780A-48A5-99A8-DCDDA82372A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE8DDAD-780A-48A5-99A8-DCDDA82372A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5798221-C71E-4991-A60E-0A60C52FB1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5798221-C71E-4991-A60E-0A60C52FB1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5798221-C71E-4991-A60E-0A60C52FB1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5798221-C71E-4991-A60E-0A60C52FB1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617D8D59-653A-4374-A227-D2195B7F5A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617D8D59-653A-4374-A227-D2195B7F5A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617D8D59-653A-4374-A227-D2195B7F5A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617D8D59-653A-4374-A227-D2195B7F5A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA0C22B-C1F1-417E-A234-3605F0A15A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA0C22B-C1F1-417E-A234-3605F0A15A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA0C22B-C1F1-417E-A234-3605F0A15A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA0C22B-C1F1-417E-A234-3605F0A15A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C17B7E-B54E-4785-B3DB-C8B8BAE38703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C17B7E-B54E-4785-B3DB-C8B8BAE38703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C17B7E-B54E-4785-B3DB-C8B8BAE38703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C17B7E-B54E-4785-B3DB-C8B8BAE38703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6315F0B2-9F2A-46EC-BEE9-F4A22B0022B9} = {C7536D87-66BB-4F02-958D-9DE31CFF1520}
+		{C8F62069-8AB0-47AB-9F83-EFE534109311} = {D5BEDD01-F66C-4202-830A-3A24F527B614}
+		{5EE8DDAD-780A-48A5-99A8-DCDDA82372A2} = {0AB4A289-5842-4D83-BB8C-719477E04672}
+		{F5798221-C71E-4991-A60E-0A60C52FB1E2} = {4BB01036-AED0-4B8C-B66B-3B72E956E9F0}
+		{617D8D59-653A-4374-A227-D2195B7F5A19} = {D5BEDD01-F66C-4202-830A-3A24F527B614}
+		{FDA0C22B-C1F1-417E-A234-3605F0A15A00} = {0AB4A289-5842-4D83-BB8C-719477E04672}
+		{A8C17B7E-B54E-4785-B3DB-C8B8BAE38703} = {4BB01036-AED0-4B8C-B66B-3B72E956E9F0}
 	EndGlobalSection
 EndGlobal

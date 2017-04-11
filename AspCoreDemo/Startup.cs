@@ -30,17 +30,6 @@ namespace AspCoreDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddTransient<ISomeService, SomeService>(); //Instance per lifetime scope
-
-            //services.AddScoped<SomeService>(); //Instance per dependency
-
-            services.AddSingleton<ISomeService, SomeService>(); //Instance per app
-            services.AddSingleton<ISomeService, SomeService>(); //Instance per app
-            services.AddSingleton<ISomeService, SomeService>(); //Instance per app
-            services.AddSingleton<ISomeService, SomeService>(); //Instance per app
-
-            // Add framework services.
-            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,11 +37,6 @@ namespace AspCoreDemo
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
-            if (env.IsStaging())
-            {
-                //Configure 
-            }
 
             //Middleware component 1
             app.Use(async (context, next) =>
@@ -66,11 +50,9 @@ namespace AspCoreDemo
             app.Use(async (context, next) =>
             {
                 await context.Response.WriteAsync("Middleware Component 2<br/>");
-                //await next.Invoke();
+                await next.Invoke();
                 await context.Response.WriteAsync("Middleware Component 2<br/>");
             });
-
-            //app.UseCustomMyCustomMiddleware();
 
             //Middleware component 3
             app.Use(async (context, next) =>
@@ -80,12 +62,13 @@ namespace AspCoreDemo
                 await context.Response.WriteAsync("Middleware Component 3<br/>");
             });
 
-            app.UseMvc();
-
-            //app.UseStaticFiles();
+            //App Run
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Running...");
+            });
         }
-
-
+        
         // For Staging Environment
         public void ConfigureStaging(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
